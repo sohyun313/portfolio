@@ -1,0 +1,262 @@
+@charset "utf-8";
+
+.header {
+    background-color: transparent;
+}
+.header .inner {
+    position: relative;
+}
+.header .gnb {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 99;
+}
+.header .gnb ul li {
+    float: left;
+    height: 30px;
+    margin-right: 75px;
+}
+.header .gnb ul li a {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Inter';
+}
+.contact {
+    width: 100%;
+}
+.contact .inner {
+    max-width: 1430px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.contact .inner .cover {
+    position: fixed;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/bg_contact.png)no-repeat center/cover;
+}
+.contact .container {
+    margin: 85px auto 0;
+    max-width: 800px;
+    height: 800px;
+    border-radius: 50%;
+    background-color: rgba(0,0,0,.18);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 5px 10px rgba(51, 51, 51,0.3);
+}
+.contact .container h1 {
+    padding-top: 130px;
+    text-align: center;
+}
+.contact .container .txt {
+    width: 324px;
+    margin: 0 auto;
+}
+.contact .container p {
+    color: rgba(255,255,255,.65);
+    font-size: 18px;
+    font-weight: 400;
+}
+.contact .container .email {
+    padding-top: 30px;
+}
+.contact .container .tel {
+    padding: 20px 0 30px;
+}
+.contact .container p strong {
+    color: rgb(255,255,255);
+    font-size: 19px;
+    font-weight: 500;
+    padding-right: 1.5em;
+}
+.contact .container form {
+    width: 324px;
+    margin: 0 auto;
+    text-align: center;
+}
+.contact .container form ul li~li {
+    margin-top: 15px;
+}
+.contact .container form ul li:last-child {
+    margin-top: 25px;
+}
+.contact .container form ul li input {
+    width: 100%;
+    height: 40px;
+    outline: none;
+    border: 0;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+}
+.contact .container form ul li input::placeholder {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+}
+.contact .container form ul li textarea {
+    margin-top: 25px;
+    width: 100%;
+    height: 158px;
+    outline: none;
+    border: 2px solid #fff;
+    border-radius: 5px;
+    background: transparent;
+    padding: 13px;
+}
+.contact .container form ul li textarea::placeholder {
+    font-family: 'Inter';
+    font-weight: 300;
+    font-size: 18px;
+    color: #fff;
+}
+.contact .container form ul li:last-child {
+    position: relative;
+}
+.contact .container form .btn {
+    width: 172px;
+    height: 47px;
+    background-color: #003257;
+    border-radius: 30px;
+    border: 0;
+    font-size: 18px;
+    color: #fff;
+    cursor: pointer;
+    transition: .5s;
+}
+.contact .container form .btn:hover {
+    background-color: #fff;
+    color: #80cdda;
+}
+.resume {
+    position: fixed;
+    bottom: 40px;
+    right: 50px;
+    background-color: rgba(255,255,255,.5);
+    color: #4eaebe;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 40px;
+    height: 40px;
+    width: 170px;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: 30px;
+}
+/* responsive-web breakpoints */
+@media screen and (max-width: 1024px){
+    .contact .container {
+        margin: 140px auto 0;
+        max-width: 600px;
+        height: 600px;
+    }
+    .contact .container h1 {
+        padding-top: 90px;
+    }
+    .contact .container form ul li input {
+        height: 30px;
+    }
+    .contact .container form ul li textarea {
+        margin-top: 15px;
+        height: 100px;
+    }
+    .contact .container .tel {
+        padding: 20px 0 20px;
+    }
+    .contact .container form .btn {
+        width: 150px;
+        height: 43px;
+        font-size: 1em;
+    }
+}
+@media screen and (max-width: 768px){
+    .contact .container h1 {
+        padding-top: 60px;
+    }
+    .contact .container .email {
+        padding-top: 1.5em;
+    }
+    .contact .container p {
+        font-size: 1em;
+    }
+    .contact .container p {
+        font-size: 1em;
+    }
+    .resume {
+        position: fixed;
+        bottom: 35px;
+        right: 35px;
+    }
+}
+@media screen and (max-width: 690px){
+    .contact .container h1 img {
+        width: 42vw;
+    }
+    .contact .container {
+        margin: 150px 25px 0;
+        max-width: 600px;
+        height: 600px;
+        border-radius: 100px;
+    }
+    .contact .container p strong {
+        font-size: 3vw;
+    }
+    .contact .container form ul li input::placeholder {
+        font-size: 2.5vw;
+    }
+    .contact .container form ul li textarea {
+        margin-top: 20px;
+        width: 100%;
+        height: 140px;
+        padding: 10px;
+    }
+    .contact .container form ul li textarea::placeholder {
+        font-size: 2.5vw;
+    }
+    .contact .container form .btn {
+        width: 135px;
+        height: 39px;
+        font-size: 3vw;
+    }
+}
+@media screen and (max-width: 480px){
+    .contact .container h1 img {
+        width: 50vw;
+    }
+    .contact .container {
+        max-width: 600px;
+        height: 550px;
+        border-radius: 50px;
+    }
+    .contact .container p {
+        font-size: 3.5vw;
+    }
+    .contact .container p strong {
+        font-size: 4vw;
+    }
+    .contact .container form ul li input {
+        height: 25px;
+    }
+    .contact .container form ul li textarea {
+        margin-top: 11px;
+        height: 110px;
+        padding: 10px;
+    }
+    .contact .container form ul li input::placeholder {
+        font-size: 3vw;
+    }
+    .contact .container form ul li textarea::placeholder {
+        font-size: 3vw;
+    }
+    .contact .container .txt {
+        width: 60vw;
+    }
+    .contact .container form {
+        width: 60vw;
+    }
+}

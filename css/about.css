@@ -1,0 +1,826 @@
+@charset "utf-8";
+
+body {
+    background-color: #fff;
+    font-family: 'SCDream';
+    word-break: keep-all;
+}
+
+h2 {
+    font-size: 60px;
+    font-weight: 600;
+    font-family: 'Inter';
+    padding-top: 16px;
+}
+
+p {
+    color: #888;
+}
+
+.ab {
+    display: block;
+    font-size: 16px;
+    color: #87bce8;
+    font-family: 'Inter';
+}
+
+.header {
+    background-color: transparent;
+}
+
+.header .inner {
+    position: relative;
+}
+
+.header .gnb {
+    position: absolute;
+    top: 60px;
+    right: 0;
+    z-index: 99;
+}
+
+.header .gnb ul li {
+    float: left;
+    height: 30px;
+    margin-right: 75px;
+}
+
+.header .gnb ul li a {
+    display: block;
+    font-size: 24px;
+    font-weight: 500;
+    font-family: 'Inter';
+}
+
+.visual {
+    width: 100%;
+    height: 960px;
+    background: url(../images/visual.png)no-repeat center/cover;
+    position: relative;
+}
+
+.visual img {
+    position: absolute;
+    top: 343px;
+    left: 43px;
+}
+
+.visual .mypic {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 720px;
+    height: 720px;
+    border-radius: 50%;
+    background: #fff url(../images/profile.jpg)no-repeat center top/cover;
+    z-index: 5;
+}
+
+.visual .drop1 {
+    position: absolute;
+    top: 179px;
+    right: 377px;
+    width: 368px;
+    height: 368px;
+    background: url(../images/droplet.png)no-repeat center/cover;
+    mix-blend-mode: luminosity;
+}
+
+.visual .drop2 {
+    position: absolute;
+    left: 404px;
+    top: 546px;
+    width: 280px;
+    height: 280px;
+    background: url(../images/droplet.png)no-repeat center/cover;
+    mix-blend-mode: luminosity;
+}
+
+.visual .drop3 {
+    position: absolute;
+    right: 253px;
+    bottom: 186px;
+    width: 160px;
+    height: 160px;
+    background: url(../images/droplet.png)no-repeat center/cover;
+    mix-blend-mode: luminosity;
+}
+
+.intro {
+    height: 688px;
+    padding: 165px 0 200px;
+}
+
+.intro .inner {
+    position: relative;
+}
+
+.intro img {
+    padding-bottom: 75px;
+}
+
+.intro h3 {
+    font-family: "SCDream";
+    padding-bottom: 63px;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.intro p {
+    line-height: 32px;
+    font-size: 21px;
+    font-weight: 300;
+}
+
+.ability {
+    height: 1077px;
+}
+
+.ability .inner {
+    height: 100%;
+    position: relative;
+}
+
+.ability .inner>div {
+    width: 100%;
+    height: 411px;
+}
+
+.ability h2 {
+    padding-bottom: 40px;
+}
+
+.ability .inner>div {
+    width: 100%;
+    height: 30vw;
+}
+
+.ability .fl-ad .pic {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+}
+
+.ability .pt-rs .txt {
+    position: absolute;
+    left: 687px;
+    top: 25%;
+}
+
+.ability .fl-ad .txt {
+    text-align: right;
+    position: absolute;
+    right: 687px;
+    bottom: 12%;
+}
+
+.ability .pic {
+    width: 33vw;
+}
+
+.ability .pic img {
+    overflow: hidden;
+    object-fit: cover;
+}
+
+.ability .txt h3 {
+    font-size: 30px;
+    font-weight: 500;
+    padding-bottom: 40px;
+}
+
+.ability .txt p {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.ability .txt span {
+    position: absolute;
+    display: block;
+    width: 612px;
+    height: 2px;
+    background-color: #87bce8;
+}
+
+.ability .pt-rs .txt span {
+    top: 35%;
+    left: -20%;
+}
+
+.ability .fl-ad .txt span {
+    top: 35%;
+}
+
+.intro2 {
+    height: 880px;
+    position: relative;
+}
+
+.intro2 .inner {
+    padding: 340px 0 210px;
+}
+
+.intro2 img {
+    position: absolute;
+    top: 278px;
+    right: 275px;
+}
+
+.intro2 .background {
+    position: absolute;
+    left: 0;
+    right: 0;
+    background: url(../images/about_bg.png)no-repeat center/cover;
+    background-attachment: fixed;
+    width: 100%;
+    height: 332px;
+}
+
+.intro2 .txt {
+    padding: 75px 275px 0 0;
+}
+
+.intro2 .txt p {
+    text-align: right;
+    font-size: 30px;
+    font-weight: 400;
+    line-height: 2;
+    color: #fff;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, .7);
+}
+
+.skills {
+    height: auto;
+    text-align: center;
+}
+
+.skills .inner {
+    padding: 0 0 150px;
+}
+
+.skills h2 {
+    padding-bottom: 55px;
+}
+
+.skills h3 {
+    font-size: 24px;
+    font-weight: 500;
+    padding: 40px 0 25px;
+}
+
+.skills p {
+    font-size: 21px;
+    font-weight: 300;
+    line-height: 32px;
+}
+
+.skills .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.skills .container>div {
+    padding: 0 53px;
+}
+
+.skills .progress {
+    width: 302px;
+    height: 302px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.skills .ps .progress {
+    background: url(../images/skills_ps.png)no-repeat center/contain;
+}
+
+.skills .ai .progress {
+    background: url(../images/skills_ai.png)no-repeat center/contain;
+}
+
+.skills .vs .progress {
+    background: url(../images/skills_vscode.png)no-repeat center/contain;
+}
+
+#ps,
+#ai,
+#vs {
+    width: 86%;
+    height: 86%;
+}
+
+.favorite {
+    height: 670px;
+    text-align: center;
+}
+
+.favorite h2 {
+    padding-bottom: 60px;
+}
+
+.favorite h3 {
+    top: 30%;
+    font-size: 36px;
+    font-weight: 700;
+    color: #fff;
+    padding-bottom: 40px;
+}
+
+.favorite p {
+    top: 50%;
+    font-size: 18px;
+    font-weight: 300;
+    color: #fff;
+    line-height: 24px;
+}
+
+.favorite h3,
+.favorite p {
+    position: absolute;
+    z-index: 2;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    transition: all .5s;
+}
+
+.favorite .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.favorite .container>div {
+    padding-top: 95px;
+    width: 435px;
+    height: 299px;
+    position: relative;
+    transition: all .5s;
+}
+
+.favorite .container>div::after {
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .7);
+    transition: all .5s;
+}
+
+.favorite .container .drawing {
+    background: url(../images/fav_drawing3.png)no-repeat center top/cover;
+    opacity: 0.9;
+}
+
+.favorite .container .culture {
+    background: url(../images/fav_culture.jpg)no-repeat center 30%/cover;
+    opacity: 0.9;
+}
+
+.favorite .container .travel {
+    background: url(../images/fav_travel.jpg)no-repeat center top/cover;
+    opacity: 0.9;
+}
+
+.favorite .container>div:hover {
+    opacity: 1;
+}
+
+.favorite .container>div:hover p,
+.favorite .container>div:hover h3 {
+    opacity: 0;
+}
+
+.favorite .container>div:hover::after {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.footer {
+    width: 100%;
+    height: 334px;
+    text-align: center;
+    position: relative;
+    background-color: #87bce8;
+}
+
+.footer .inner {
+    height: 100%;
+}
+
+.footer .ft {
+    position: absolute;
+    top: 40%;
+    transform: translateY(-50%);
+    left: 0;
+    width: 100%;
+}
+
+.footer .ft p {
+    font-size: 30px;
+    font-weight: 500;
+    color: #fff;
+}
+
+.footer .fb {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 2vw 0;
+    background-color: #003257;
+}
+
+.footer .fb a {
+    font-size: 24px;
+    font-weight: 500;
+    color: #fff;
+    position: relative;
+}
+
+.footer .fb a i {
+    position: absolute;
+    top: 30%;
+    right: -20px;
+    font-size: 18px;
+    color: #fff;
+}
+
+.footer .fb a:hover i {
+    animation: move 1.3s;
+}
+
+@keyframes move {
+    0% {
+        right: -20px;
+    }
+
+    30% {
+        right: -30px;
+    }
+
+    50% {
+        right: -20px;
+    }
+
+    70% {
+        right: -27px;
+    }
+
+    100% {
+        right: -20px;
+    }
+}
+
+/* responsive-web breakpoints */
+@media screen and (max-width: 1700px) {
+    .visual img {
+        left: 2vw;
+        top: 20vh;
+        width: 30vw;
+    }
+
+    .visual .drop1 {
+        right: 13vw;
+        top: 15vw;
+        width: 25vw;
+        height: 25vw;
+        background: url(../images/droplet.png)no-repeat center/contain;
+    }
+
+    .visual .drop2 {
+        left: 16vw;
+        top: 33vw;
+        width: 18vw;
+        height: 18vw;
+        background: url(../images/droplet.png)no-repeat center/contain;
+    }
+
+    .visual .drop3 {
+        right: 8vw;
+        bottom: 9vw;
+        width: 12vw;
+        height: 12vw;
+        background: url(../images/droplet.png)no-repeat center/contain;
+    }
+}
+
+@media screen and (max-width: 1550px) {
+    .visual {
+        height: 60vw;
+    }
+
+    .visual .mypic {
+        width: 45vw;
+        height: 45vw;
+        background: #fff url(../images/profile.jpg)no-repeat center top/cover;
+    }
+
+    .inner {
+        width: 95%;
+    }
+
+    h2 {
+        font-size: 3.8vw;
+        padding-top: 0.8vw;
+    }
+
+    .intro img {
+        width: 25vw;
+        padding-bottom: 4vw;
+    }
+
+    .intro h3 {
+        padding-bottom: 4vw;
+        font-size: 2vw;
+    }
+
+    .intro p {
+        line-height: 1.7;
+        font-size: 1.5vw;
+    }
+
+    .ability {
+        height: 70vw;
+    }
+
+    .ability .pic {
+        width: 40vw;
+    }
+
+    .ability .pic img {
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .ability .pt-rs .txt {
+        position: absolute;
+        left: 43vw;
+        top: 20vw;
+    }
+
+    .ability .fl-ad .txt {
+        text-align: right;
+        position: absolute;
+        right: 43vw;
+        bottom: 8vw;
+    }
+
+    .ability .txt h3 {
+        font-size: 2vw;
+        padding-bottom: 3vw;
+    }
+
+    .ability .txt p {
+        font-size: 1.5vw;
+        line-height: 1.5;
+    }
+
+    .ability .txt span {
+        width: 43.5vw;
+        height: 2px;
+    }
+
+    .ability .pt-rs .txt span {
+        top: 3vw;
+        left: -7vw;
+    }
+
+    .ability .fl-ad .txt span {
+        top: 3vw;
+    }
+
+    .intro2 {
+        height: 80vw;
+    }
+
+    .intro2 .inner {
+        padding: 29vw 0;
+    }
+
+    .intro2 img {
+        right: 8vw;
+        top: 25.4vw;
+        width: 30vw;
+    }
+
+    .intro2 .txt {
+        padding: 9vh 8vw 0 0;
+    }
+
+    .intro2 .txt p {
+        font-size: 2vw;
+    }
+
+    .footer .ft p {
+        font-size: 2vw;
+    }
+
+    .footer .fb a {
+        font-size: 1.7vw;
+    }
+
+    .footer .fb a i {
+        top: 1vh;
+        right: -1.4vw;
+        font-size: 1.4vw;
+    }
+
+    .skills .inner {
+        padding: 0 0 13vh;
+    }
+
+    .skills .container>div {
+        padding: 2vw;
+    }
+
+    .skills .progress {
+        width: 23vw;
+        height: 23vw;
+    }
+
+    .skills h3 {
+        font-size: 2vw;
+        padding: 3vw 0 2vw;
+    }
+
+    .skills p {
+        font-size: 1.6vw;
+        line-height: 1.5;
+    }
+
+    .favorite {
+        height: 50vw;
+    }
+
+    .favorite .container>div {
+        padding-top: 10vh;
+        width: 30vw;
+        height: 20vw;
+        margin: 0.8vw;
+    }
+
+    .favorite h3 {
+        top: 30%;
+        font-size: 2.5vw;
+        padding-bottom: 40px;
+    }
+
+    .favorite p {
+        top: 50%;
+        font-size: 1.3vw;
+        line-height: 1.5;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .intro2 .background {
+        height: 28vw;
+    }
+
+    .footer {
+        width: 100%;
+        height: 20vw;
+        text-align: center;
+        position: relative;
+        background-color: #87bce8;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .intro {
+        height: 65vw;
+        padding: 20vw 0;
+    }
+
+    .skills .container {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+
+}
+
+@media screen and (max-width: 950px) {}
+
+@media screen and (max-width: 768px) {
+    .ab {
+        font-size: 13px;
+    }
+
+    .ability h2 {
+        padding-bottom: 6vw;
+    }
+
+    .ability .fl-ad .txt span {
+        left: 0;
+    }
+
+    .intro2 .txt {
+        padding: 8vw 8vw 0 0;
+    }
+
+    .skills .inner {
+        padding: 0 0 10vw;
+    }
+
+    .skills h2 {
+        padding-bottom: 6vw;
+    }
+
+    .skills .progress {
+        width: 28vw;
+        height: 28vw;
+    }
+
+    .favorite h2 {
+        padding-bottom: 6vw;
+    }
+
+    .footer .ft {
+        top: 35%;
+    }
+
+    .footer .fb a i {
+        top: 0.6vw;
+        right: -2.4vw;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .visual img {
+        left: 2vw;
+        top: 15vh;
+        width: 30vw;
+    }
+
+    .ab {
+        font-size: 10px;
+    }
+
+    .ability {
+        height: 100vw;
+    }
+
+    .ability .txt span {
+        width: 49vw;
+    }
+
+    .ability .pt-rs .txt {
+        top: 14vw;
+    }
+
+    .ability .pt-rs .txt span {
+        top: 4vw;
+        left: -7vw;
+    }
+
+    .ability .fl-ad .txt {
+        right: 42vw;
+        bottom: -3vw;
+    }
+
+    .ability .fl-ad .txt span {
+        top: 4vw;
+        left: 9vw;
+    }
+
+    .intro {
+        height: 73vw;
+        padding: 15vw 0 21vw;
+    }
+
+    .intro2 .txt {
+        padding: 5.5vw 8vw 0 0;
+    }
+
+    .skills .progress {
+        width: 39vw;
+        height: 39vw;
+    }
+
+    .favorite {
+        height: 110vw;
+    }
+
+    .favorite .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .favorite .container>div {
+        padding-top: 10vh;
+        width: 40vw;
+        height: 24vw;
+        margin: 1vw;
+    }
+
+    .footer .ft {
+        top: 28%;
+    }
+}
