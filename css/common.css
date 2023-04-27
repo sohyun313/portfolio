@@ -157,7 +157,7 @@ body::-webkit-scrollbar-track {
 }
 .mb-bt {
     position: relative;
-    top: -60px; left: 88%;
+    top: -60px; left: 90%;
     width: 50px; height: 50px;
     z-index: 999;
     border-radius: 30%;
@@ -264,13 +264,26 @@ body::-webkit-scrollbar-track {
     .header .gnb {
         display: none;
     }
+    .header .inner .logo {
+        position: absolute;
+        top: 50%;
+        left: 0;
+    }
+    .header .inner .logo a {    
+        width: 60px;
+        height: 43px;
+        background: url(../images/logo.png)no-repeat center/contain;
+    }
     .mb-bt {
         opacity: 1;
-        top: 30px;
+        top: 15px;
     }
 }
 @media screen and (max-width: 480px){
     .mb-bt {
-        left: 83%;
+        left: 86%;
+    }
+    .mb-bt span {
+        width: 30px;
     }
 }

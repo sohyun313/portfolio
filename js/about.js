@@ -12,7 +12,7 @@ $(document).ready(function () {
         });
         circle.animate(percent);
     }
-    console.log($('.intro2').offset().top)
+    // console.log($('.intro2').offset().top)
     let progressOn = false;
     $(window).scroll(function(){
         console.log($('html,body').scrollTop())
@@ -21,7 +21,7 @@ $(document).ready(function () {
             if(progressOn){
                skill("#ps", 0.9)
                skill("#ai", 0.8)
-               skill("#vs", 0.6)               
+               skill("#vs", 0.6)
             }
         }
     })

@@ -37,13 +37,11 @@ $(document).ready(function () {
 		  sectionPos[index] = tempY;
 		});
 		// sectionPos[sectionPos.length] = Math.ceil(footer.offset().top);
-		console.log(sectionPos);
 	  }
 	  // 최초에 새로고침 또는 실행시 위치값파악 =>sectionPos배열에 저장
 	  resetSection();
 
 	let sectionTotal = sectionPos.length;
-    console.log("sectionTotal : " + sectionTotal);
   
     let resizeTimer;
     $(window).bind("resize", function () {
@@ -71,8 +69,6 @@ $(document).ready(function () {
 		if (distance == null) {
 		  distance = event.originalEvent.detail * -1;
 		}
-		console.log(event.originalEvent.detail);
-		console.log(distance);
 		if (wheeling != true) {
 		  return;
 		}
@@ -93,7 +89,6 @@ $(document).ready(function () {
 		  if (sectionIndex <= 0) {
 			sectionIndex = 0;
 		  }
-		  console.log(sectionIndex);
 		}
 	
 		gsap.to($("html"), sectionSpeed / 1000, {
