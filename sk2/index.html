@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SK-2</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- swiper slide css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- jQuery cdn -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script src="https://kit.fontawesome.com/290b5e8e9d.js" crossorigin="anonymous"></script>
+    <!-- bxslider -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <!-- 모바일 메뉴 버튼 -->
+    <a href="#" class="mb-bt">
+        <span class="line"></span>
+    </a>
+    <!-- 모바일 메뉴바 -->
+    <div class="mb-nav">
+        <nav class="mb-nav-main">
+            <ul class="mb-menu">
+                <li class="mb-mainmenu">
+                    <a href="#">제품</a>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">피부문제</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">피부노화 & 주름</a></li>
+                                <li><a href="#">건조하고 거친 피부</a></li>
+                                <li><a href="#">모공 케어</a></li>
+                                <li><a href="#">기미 관리</a></li>
+                                <li><a href="#">윤기 없는 피부</a></li>
+                                <li><a href="#">피부 탄력</a></li>
+                                <li><a href="#">눈 밑 다크서클과 잔주름</a></li>
+                                <li><a href="#">자외선 차단</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">제품유형</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">에센스</a></li>
+                                <li><a href="#">토너</a></li>
+                                <li><a href="#">모이스처라이저</a></li>
+                                <li><a href="#">세럼</a></li>
+                                <li><a href="#">마스크</a></li>
+                                <li><a href="#">클렌저</a></li>
+                                <li><a href="#">아이케어</a></li>
+                                <li><a href="#">자외선 차단제</a></li>
+                                <li><a href="#">키트</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="#">제품라인</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">베스트셀러</a></li>
+                                <li><a href="#">PITERA 에센스</a></li>
+                                <li><a href="#">PITERA 베스트 아이템</a></li>
+                                <li><a href="#">PITERA 키트</a></li>
+                                <li><a href="#">SKINPOWER | 안티에이징</a></li>
+                                <li><a href="#">R.N.APOWER | 안티에이징</a></li>
+                                <li><a href="#">제놉틱스 | 브라이트닝</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-mainmenu"><a href="#">매장찾기</a></li>
+                <li class="mb-mainmenu"><a href="#">SK-II소개</a></li>
+            </ul>
+        </nav>
+        <div class="mb-nav-bottom clear">
+            <a href="#">언어선택</a>
+        </div>
+    </div>
+    <!-- 모바일 마스크 -->
+    <div class="mb-menu-mask"></div>
+    <!-- header -->
+    <header id="header">
+        <div class="inner">
+            <div class="logo">
+                <a href="#">
+                    <img src="images/logo.png" alt="logo">
+                </a>
+            </div>
+            <nav class="gnb">
+                <ul class="main-menu clear">
+                    <li class="menu menu01">
+                        <a href="#">제품</a>
+                        <ul class="sub-menu clear">
+                            <li>
+                                <a href="#">피부문제</a>
+                                <ul class="sub-menu02">
+                                    <li><a href="#">피부노화 & 주름</a></li>
+                                    <li><a href="#">건조하고 거친 피부</a></li>
+                                    <li><a href="#">모공 케어</a></li>
+                                    <li><a href="#">기미 관리</a></li>
+                                    <li><a href="#">윤기 없는 피부</a></li>
+                                    <li><a href="#">피부 탄력</a></li>
+                                    <li><a href="#">눈 밑 다크서클과 잔주름</a></li>
+                                    <li><a href="#">자외선 차단</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">제품유형</a>
+                                <ul class="sub-menu02">
+                                    <li><a href="#">에센스</a></li>
+                                    <li><a href="#">토너</a></li>
+                                    <li><a href="#">모이스처라이저</a></li>
+                                    <li><a href="#">세럼</a></li>
+                                    <li><a href="#">마스크</a></li>
+                                    <li><a href="#">클렌저</a></li>
+                                    <li><a href="#">아이케어</a></li>
+                                    <li><a href="#">자외선 차단제</a></li>
+                                    <li><a href="#">키트</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="#">제품라인</a>
+                                <ul class="sub-menu02">
+                                    <li><a href="#">베스트셀러</a></li>
+                                    <li><a href="#">PITERA 에센스</a></li>
+                                    <li><a href="#">PITERA 베스트 아이템</a></li>
+                                    <li><a href="#">PITERA 키트</a></li>
+                                    <li><a href="#">SKINPOWER | 안티에이징</a></li>
+                                    <li><a href="#">R.N.APOWER | 안티에이징</a></li>
+                                    <li><a href="#">제놉틱스 | 브라이트닝</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="menu menu02"><a href="#">매장찾기</a></li>
+                    <li class="menu menu03"><a href="#">SK-II소개</a></li>
+                </ul>
+            </nav>
+            <div class="gnb-utils">
+                <ul>
+                    <li class="search">
+                        <a href="#"></a>
+                    </li>
+                    <li class="language">
+                        <a href="#"></a>
+                        <ul class="lang-list">
+                            <li class="on"><a href="#">한국어</a></li>
+                            <li><a href="#">영어</a></li>
+                            <li><a href="#">일본어</a></li>
+                            <li><a href="#">중국어</a></li>
+                            <li><a href="#">인도네시아어</a></li>
+                            <li><a href="#">태국어</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="searchbar">
+            <form action="#" class="search-form">
+                <h2>통합검색</h2>
+                <input id="search" type="text" placeholder="검색어를 입력하세요">
+                <input type="button" class="search-form-bt" value="검색">
+            </form>
+        </div>
+    </header>
+    <main id="main">
+        <!-- visual -->
+        <section class="visual">
+            <div class="inner">
+                <div class="swiper sw-visual">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a class="vs-slide1"></a>
+                            <div class="text">
+                                <p>PITERA FACIAL TREATMENT CLEAR LOTION &amp; ESSENCE</p>
+                                <h3>피테라 토너 &amp; 에센스</h3>
+                                <h4>맑고 투명한 피부를 위한 아이코닉 토너와 에센스</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-slide">
+                            <a class="vs-slide2"></a>
+                            <div class="text">
+                                <p>SKIN POWER AIRY MILKY LOTION</p>
+                                <h3>스킨파워 에어리 크림</h3>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a class="vs-slide3"></a>
+                            <div class="text">
+                                <p>GENOPTICS AURA ESSENCE</p>
+                                <h3>제놉틱스 오라 에센스</h3>
+                                <h4>광채나는 피부를 위한 NO.1 브라이트닝 에센스</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next"></div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-pagination"></div>
+                </div>
+            </div>
+        </section>
+        <!-- bestseller -->
+        <section class="bestseller">
+            <div class="inner">
+                <h2>베스트셀러</h2>
+                <div class="bs_slider">
+                    <div>
+                        <div class="img-box">
+                            <img src="images/product_img1.png" alt="피테라에센스">
+                        </div>
+                        <h3>피테라&trade;에센스</h3>
+                        <p>219,000원</p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="images/product_img2.png" alt="제놉틱스오라에센스">
+                        </div>
+                        <h3>제놉틱스 오라 에센스</h3>
+                        <p>199,000원</p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="images/product_img3.png" alt="제놉틱스스팟에센스">
+                        </div>
+                        <h3>제놉틱스 스팟 에센스</h3>
+                        <p>184,000원</p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="images/product_img4.png" alt="스킨파워에어리크림">
+                        </div>
+                        <h3>스킨파워 에어리 크림</h3>
+                        <p>166,000원</p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="images/product_img5.png" alt="스킨파워에센스">
+                        </div>
+                        <h3>스킨파워 에센스</h3>
+                        <p>166,000원</p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="images/product_img6.png" alt="스킨파워아이크림">
+                        </div>
+                        <h3>스킨파워 아이크림</h3>
+                        <p>153,000원</p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="images/product_img7.png" alt="스킨파워크림">
+                        </div>
+                        <h3>스킨파워 크림</h3>
+                        <p>166,000원</p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="images/product_img8.png" alt="피테라첫만남키트">
+                        </div>
+                        <h3>피테라&trade;첫 만남 키트</h3>
+                        <p>106,400원</p>
+                    </div>
+                    <div>
+                        <div class="img-box">
+                            <img src="images/product_img9.png" alt="피테라풀라인세트">
+                        </div>
+                        <h3>피테라&trade;풀라인 세트</h3>
+                        <p>116,000원</p>
+                    </div>
+                </div>
+                <div class="progress">
+                    <span></span>
+                </div>
+                <div class="slider-controls">
+                    <span class="slider-prev"></span>
+                    <span class="slider-next"></span>
+                </div>
+            </div>
+        </section>
+        <!-- Product promotion -->
+        <section class="promotion">
+            <div class="inner">
+                <div class="txt">
+                    <h2>PITERA&trade; 첫 만남 키트</h2>
+                    <p>SK-II 3종 베스트셀러 아이템들로 구성된<br>
+                        피테라&trade; 첫 만남 키트로 맑고 투명한 피부를 발견해보세요</p>
+                    <button>자세히 보기</button>
+                </div>
+                <div class="image"></div>    
+            </div>
+        </section>
+        <!-- review -->
+        <section class="review">
+            <div class="inner">
+                <h2>상품후기</h2>
+                <div class="swiper sw-review">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="pic pic1">
+                                <img src="images/review_img1.png" alt="LXP얼티미트퍼펙팅아이크림">
+                            </div>
+                            <div class="text-box">
+                                <p>&quot;이 아이 크림은 진정 효과가 정말 좋아요. 긴장이 진짜 잘 풀리죠. 기대했던 대로라서 마음에 드네요. 다른 사람들한테도 추천해 주려고요.&quot;
+                                </p>
+                                <span> - as*********62</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="pic pic2">
+                                <img src="images/review_img2.png" alt="스킨파워크림">
+                            </div>
+                            <div class="text-box">
+                                <p>&quot;새로 나온 이 크림은 최근에 써 봤는데 정말 마음에 들어요. 피부가 온종일 탱탱하면서 은은하게
+                                    빛나고 매끄러워서 너무 좋아요.&quot;</p>
+                                <span> - 춘시아</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="pic pic3">
+                                <img src="images/review_img3.png" alt="페이셜트리트먼트크림">
+                            </div>
+                            <div class="text-box">
+                                <p>&quot;피부에 바를 때 정말 마음에 들어요. 사용할 때면 자신감이 들고 피부의 느낌도 너무 좋거든요.&quot;</p>
+                                <span> - e**ko</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="pic pic1">
+                                <img src="images/review_img1.png" alt="LXP얼티미트퍼펙팅아이크림">
+                            </div>
+                            <div class="text-box">
+                                <p>&quot;이 아이 크림은 진정 효과가 정말 좋아요. 긴장이 진짜 잘 풀리죠. 기대했던 대로라서 마음에 드네요. 다른 사람들한테도 추천해 주려고요.&quot;
+                                </p>
+                                <span> - as*********62</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="pic pic2">
+                                <img src="images/review_img2.png" alt="스킨파워크림">
+                            </div>
+                            <div class="text-box">
+                                <p>"새로 나온 이 크림은 최근에 써 봤는데 정말 마음에 들어요. 피부가 온종일 탱탱하면서 은은하게 빛나고
+                                    매끄러워서 너무 좋아요."</p>
+                                <span> - 춘시아</span>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="pic pic3">
+                                <img src="images/review_img3.png" alt="페이셜트리트먼트크림">
+                            </div>
+                            <div class="text-box">
+                                <p>&quot;피부에 바를 때 정말 마음에 들어요. 사용할 때면 자신감이 들고 피부의 느낌도 너무 좋거든요.&quot;</p>
+                                <span> - e**ko</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-btn-next">다음</div>
+                    <div class="swiper-btn-prev">이전</div>
+                </div>
+            </div>
+        </section>
+        <!-- promotional video -->
+        <section class="promotion-video clear">
+            <div class="inner">
+                <div class="video">
+                    <video src="images/skincareSecret_SK-II.mp4" autoplay muted loop></video>
+                </div>
+                <div class="txt">
+                    <h2>페이셜 트리트먼트 에센스<br>
+                        탕웨이의 스킨 케어 비밀</h2>
+                    <span></span>
+                    <p>피부가 온전히 빠져드는 피테라&trade;에센스<br>
+                        탕웨이의 맑고 투명한 피부의 비밀을 발견해보세요!</p>
+                    <button>자세히 보기</button>
+                </div>
+            </div>
+        </section>
+        <!-- SNS ad -->
+        <section class="sns">
+            <div class="inner">
+                <h2>#With SK-II</h2>
+                <div class="sns_slider">
+                    <div>
+                        <div class="sns-img">
+                            <img src="images/banner_img1.png" alt="피테라에센스">
+                        </div>
+                        <div class="detail">
+                            <h3>@SK-2_Official</h3>
+                            <p>#SK-II #피테라&trade;에센스 #수분충전 #물광피부</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sns-img">
+                            <img src="images/banner_img2.png" alt="페이셜트리트먼트에센스">
+                        </div>
+                        <div class="detail">
+                            <h3>@SK-2_Official</h3>
+                            <p>#SK-II #페이셜트리트먼트에센스 #촉촉피부</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sns-img">
+                            <img src="images/banner_img3.png" alt="SK-II기프트세트">
+                        </div>
+                        <div class="detail">
+                            <h3>@SK-2_Official</h3>
+                            <p>#SK-II #기프트세트 #스페셜에디션</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sns-img">
+                            <img src="images/banner_img4.png" alt="페이셜트리트먼트마스크">
+                        </div>
+                        <div class="detail">
+                            <h3>@SK-2_Official</h3>
+                            <p>#SK-II #페이셜트리트먼트마스크 #매끈피부</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sns-img">
+                            <img src="images/banner_img5.png" alt="SK-II맨">
+                        </div>
+                        <div class="detail">
+                            <h3>@wooo_0v0</h3>
+                            <p>#SK-II #남성용 #남친선물 #매끈피부</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sns-img">
+                            <img src="images/banner_img6.png" alt="제놉틱스오라에센스">
+                        </div>
+                        <div class="detail">
+                            <h3>@SK-2_Official</h3>
+                            <p>#SK-II #제놉틱스오라에센스 #극광에센스</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sns-img">
+                            <img src="images/banner_img7.png" alt="스킨파워크림">
+                        </div>
+                        <div class="detail">
+                            <h3>@SK-2_Official</h3>
+                            <p>#SK-II #스킨파워크림 #피부탄력</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sns-img">
+                            <img src="images/banner_img8.png" alt="스킨파워아이크림">
+                        </div>
+                        <div class="detail">
+                            <h3>@loco_moco</h3>
+                            <p>#SK-II #스킨파워아이크림 #주름개선</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sns-img">
+                            <img src="images/banner_img9.png" alt="피테라에센스흰토끼에디션">
+                        </div>
+                        <div class="detail">
+                            <h3>@sohyun_0303</h3>
+                            <p>#SK-II #피테라&trade;에센스 #흰토끼에디션</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="sns-img">
+                            <img src="images/banner_img10.png" alt="R.N.APOWER">
+                        </div>
+                        <div class="detail">
+                            <h3>@y_n_rich</h3>
+                            <p>#SK-II #R.N.APOWER #피부탄력</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="control">
+                    <span class="arrow-right"></span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer id="footer">
+        <div class="mb-inner"></div>
+        <div class="inner clear">
+            <div class="btns">
+                <button class="btn">영상정보처리방침</button>&#124;
+                <button class="btn">사이트맵</button>&#124;
+                <button class="btn">개인정보처리방침</button>&#124;
+                <button class="btn">서비스이용약관</button>
+            </div>
+            <div class="sns-link">
+                <ul>
+                    <li class="facebook"></li>
+                    <li class="youtube"></li>
+                    <li class="instagram"></li>
+                </ul>
+            </div>
+        </div>
+        <div class="inner clear">
+            <div class="logo-footer">
+                <img src="images/logo_footer.png" alt="logo">
+            </div>
+            <div class="txt">
+                <p class="cscenter">고객센터 080-023-3333(월~금,09:00~18:00)</p>
+                <p class="copyright">&copy;2023 Procter & Gamble. All Rights Reserved. JVA2020-02-001</p>
+            </div>
+            <div class="bbb">
+                <img src="images/footerimage.png" alt="mark">
+            </div>
+        </div>
+        <a href="javascript:void(0)" class="gotop"><i class="fa-solid fa-arrow-up"></i></a>
+    </footer>
+</body>
+</html>

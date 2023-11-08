@@ -1,0 +1,913 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>한화생명</title>
+    <link rel="shortcut icon" href="favicon.png">
+    <!-- swiper slide css -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
+    <!-- jQuery cdn -->
+    <script src="js/jquery-3.6.3.min.js"></script>
+    <!-- swiper js -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <!-- mixitup jquery -->
+    <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="js/mixitup.min.js"></script>
+    <link rel="stylesheet" href="css/main.css">
+    <script defer src="js/main.js"></script>
+</head>
+
+<body>
+    <div class="wrap" id="wrap">
+        <!-- popup all-menu -->
+        <div class="all-menu-mask"></div>
+        <div class="all-menu-wrapper">
+            <div class="all-menu-layer">
+                <h2>전체메뉴</h2>
+                <button class="bt closebt">닫기</button>
+                <div class="all-menu-content">
+                    <div class="all-menu-title">
+                        <h2>마이페이지</h2>
+                    </div>
+                    <div class="all-menu myp">
+                        <dl>
+                            <dt><a href="#">보험</a></dt>
+                            <dd><a href="#">보험계약조회/관리</a></dd>
+                            <dd><a href="#">보험료납입</a></dd>
+                            <dd><a href="#">보험료청구</a></dd>
+                            <dd><a href="#">출금(중도/만기/해지 등)</a></dd>
+                            <dd><a href="#">보험계약변경</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">퇴직연금</a></dt>
+                            <dd><a href="#">퇴직연금계약조회/관리</a></dd>
+                            <dd><a href="#">상품변경</a></dd>
+                            <dd><a href="#">IRP관리</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">대출</a></dt>
+                            <dd><a href="#">대출신청</a></dd>
+                            <dd><a href="#">대출조회</a></dd>
+                            <dd><a href="#">대출상환/이자납입</a></dd>
+                            <dd><a href="#">대출관리</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">펀드</a></dt>
+                            <dd><a href="#">편드조회</a></dd>
+                            <dd><a href="#">펀드매매</a></dd>
+                            <dd><a href="#">펀드관리</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">신탁</a></dt>
+                            <dd><a href="#">신탁조회</a></dd>
+                            <dd><a href="#">신탁해지</a></dd>
+                            <dd><a href="#">신탁관리</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">나의 정보</a></dt>
+                            <dd><a href="#">개인정보관리</a></dd>
+                            <dd><a href="#">나의관심상품</a></dd>
+                            <dd><a href="#">나의상담내역</a></dd>
+                            <dd><a href="#">금융거래내역</a></dd>
+                            <dd><a href="#">전자서명조회</a></dd>
+                            <dd><a href="#">증명서발급</a></dd>
+                            <dd><a href="#">개인정보 유출 신고</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="all-menu-content">
+                    <div class="all-menu-title">
+                        <h2>상품</h2>
+                    </div>
+                    <div class="all-menu pd">
+                        <dl>
+                            <dt><a href="#">보험</a></dt>
+                            <dd><a href="#">전체상품</a></dd>
+                            <dd><a href="#">종신/정기보험</a></dd>
+                            <dd><a href="#">건강/상해보험</a></dd>
+                            <dd><a href="#">연금/저축보험</a></dd>
+                            <dd><a href="#">어린이보험</a></dd>
+                            <dd><a href="#">장애인보험</a></dd>
+                            <dd><a href="#">다이렉트보험</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">퇴직연금</a></dt>
+                            <dd><a href="#">퇴직연금안내</a></dd>
+                            <dd><a href="#">퇴직연금서비스</a></dd>
+                            <dd><a href="#">IRP가입</a></dd>
+                            <dd><a href="#">투자가이드</a></dd>
+                            <dd><a href="#">가입자교육</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">대출</a></dt>
+                            <dd><a href="#">전체상품</a></dd>
+                            <dd><a href="#">인터넷대출</a></dd>
+                            <dd><a href="#">신용대출</a></dd>
+                            <dd><a href="#">담보대출</a></dd>
+                            <dd><a href="#">보험계약대출</a></dd>
+                            <dd><a href="#">기타상품</a></dd>
+                            <dd><a href="#">대출가이드</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">펀드</a></dt>
+                            <dd><a href="#">전체펀드</a></dd>
+                            <dd><a href="#">국내펀드</a></dd>
+                            <dd><a href="#">해외펀드</a></dd>
+                            <dd><a href="#">펀드가이드</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">신탁</a></dt>
+                            <dd><a href="#">신탁상품</a></dd>
+                            <dd><a href="#">신탁가이드</a></dd>
+                        </dl>
+                    </div>
+                </div>
+                <div class="all-menu-content">
+                    <div class="all-menu-title">
+                        <h2>고객센터</h2>
+                    </div>
+                    <div class="all-menu cs">
+                        <dl>
+                            <dt><a href="#">고객상담</a></dt>
+                            <dd><a href="#">상담전화 안내</a></dd>
+                            <dd><a href="#">인터넷상담신청</a></dd>
+                            <dd><a href="#">방문상담신청</a></dd>
+                            <dd><a href="#">자주하는 질문(FAQ)</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">고객지원</a></dt>
+                            <dd><a href="#">필요서류 안내</a></dd>
+                            <dd><a href="#">이용안내</a></dd>
+                            <dd><a href="#">지점찾기</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">공지/이벤트</a></dt>
+                            <dd><a href="#">공지사항</a></dd>
+                            <dd><a href="#">이벤트</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">고객서비스</a></dt>
+                            <dd><a href="#">한화생명종합 서비스</a></dd>
+                            <dd><a href="#">VIP 서비스</a></dd>
+                            <dd><a href="#">헬스케어 서비스</a></dd>
+                            <dd><a href="#">암보호 서비스</a></dd>
+                            <dd><a href="#">우행터 서비스</a></dd>
+                            <dd><a href="#">상조 서비스</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">소비자포털</a></dt>
+                            <dd><a href="#">소비자포털 소개</a></dd>
+                            <dd><a href="#">칭찬/제안/민원</a></dd>
+                            <dd><a href="#">소비자보호체계</a></dd>
+                            <dd><a href="#">소비자보호우수사례</a></dd>
+                            <dd><a href="#">금융사고예방 안내</a></dd>
+                            <dd><a href="#">소비자금융교육</a></dd>
+                        </dl>
+                        <dl>
+                            <dt><a href="#">신고센터</a></dt>
+                            <dd><a href="#">보험범죄신고</a></dd>
+                            <dd><a href="#">개인정보유출신고</a></dd>
+                            <dd><a href="#">대출과장광고신고</a></dd>
+                        </dl>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- 모바일 메뉴 버튼 -->
+        <a href="#" class="mb-bt">
+            <span class="line"></span>
+            <span class="line"></span>
+            <span class="line"></span>
+        </a>
+        <!-- 모바일 메뉴 -->
+        <nav class="mb-nav">
+            <ul class="mb-nav-top">
+                <li><a href="#">로그인</a></li>
+                <li><a href="#">회원가입</a></li>
+            </ul>
+            <ul class="mb-main">
+                <li class="mb-mainmenu">
+                    <a href="#">마이페이지</a>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">보험</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">보험계약조회/관리</a></li>
+                                <li><a href="#">보험료납입</a></li>
+                                <li><a href="#">보험료청구</a></li>
+                                <li><a href="#">출금(중도/만기/해지 등)</a></li>
+                                <li><a href="#">보험계약변경</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">퇴직연금</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">퇴직연금계약조회/관리</a></li>
+                                <li><a href="#">상품변경</a></li>
+                                <li><a href="#">IRP관리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">대출</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">대출신청</a></li>
+                                <li><a href="#">대출조회</a></li>
+                                <li><a href="#">대출상환/이자납입</a></li>
+                                <li><a href="#">대출관리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">펀드</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">편드조회</a></li>
+                                <li><a href="#">펀드매매</a></li>
+                                <li><a href="#">펀드관리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">신탁</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">신탁조회</a></li>
+                                <li><a href="#">신탁해지</a></li>
+                                <li><a href="#">신탁관리</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">나의 정보</a>
+
+                            <ul class="mb-3depth">
+                                <li><a href="#">개인정보관리</a></li>
+                                <li><a href="#">나의관심상품</a></li>
+                                <li><a href="#">나의상담내역</a></li>
+                                <li><a href="#">금융거래내역</a></li>
+                                <li><a href="#">전자서명조회</a></li>
+                                <li><a href="#">증명서발급</a></li>
+                                <li><a href="#">개인정보 유출 신고</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-mainmenu">
+                    <a href="#">상품</a>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">보험</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">전체상품</a></li>
+                                <li><a href="#">종신/정기보험</a></li>
+                                <li><a href="#">건강/상해보험</a></li>
+                                <li><a href="#">연금/저축보험</a></li>
+                                <li><a href="#">어린이보험</a></li>
+                                <li><a href="#">장애인보험</a></li>
+                                <li><a href="#">다이렉트보험</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">퇴직연금</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">퇴직연금안내</a></li>
+                                <li><a href="#">퇴직연금서비스</a></li>
+                                <li><a href="#">IRP가입</a></li>
+                                <li><a href="#">투자가이드</a></li>
+                                <li><a href="#">가입자교육</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">대출</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">전체상품</a></li>
+                                <li><a href="#">인터넷대출</a></li>
+                                <li><a href="#">신용대출</a></li>
+                                <li><a href="#">담보대출</a></li>
+                                <li><a href="#">보험계약대출</a></li>
+                                <li><a href="#">기타상품</a></li>
+                                <li><a href="#">대출가이드</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">펀드</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">전체펀드</a></li>
+                                <li><a href="#">국내펀드</a></li>
+                                <li><a href="#">해외펀드</a></li>
+                                <li><a href="#">펀드가이드</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">신탁</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">신탁상품</a></li>
+                                <li><a href="#">신탁가이드</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li class="mb-mainmenu">
+                    <a href="#">고객센터</a>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">고객상담</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">상담전화 안내</a></li>
+                                <li><a href="#">인터넷상담신청</a></li>
+                                <li><a href="#">방문상담신청</a></li>
+                                <li><a href="#">자주하는 질문(FAQ)</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">고객지원</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">필요서류 안내</a></li>
+                                <li><a href="#">이용안내</a></li>
+                                <li><a href="#">지점찾기</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">공지/이벤트</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">공지사항</a></li>
+                                <li><a href="#">이벤트</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">고객서비스</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">한화생명종합 서비스</a></li>
+                                <li><a href="#">VIP 서비스</a></li>
+                                <li><a href="#">헬스케어 서비스</a></li>
+                                <li><a href="#">암보호 서비스</a></li>
+                                <li><a href="#">우행터 서비스</a></li>
+                                <li><a href="#">상조 서비스</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">소비자포털</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">소비자포털 소개</a></li>
+                                <li><a href="#">칭찬/제안/민원</a></li>
+                                <li><a href="#">소비자보호체계</a></li>
+                                <li><a href="#">소비자보호우수사례</a></li>
+                                <li><a href="#">금융사고예방 안내</a></li>
+                                <li><a href="#">소비자금융교육</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <ul class="mb-submenu">
+                        <li>
+                            <a href="#">신고센터</a>
+                            <ul class="mb-3depth">
+                                <li><a href="#">보험범죄신고</a></li>
+                                <li><a href="#">개인정보유출신고</a></li>
+                                <li><a href="#">대출과장광고신고</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <!-- 모바일 마스크 -->
+        <div class="mb-menu-mask"></div>
+        <!-- 플로팅 배너 -->
+        <div class="floating-banner">
+            <ul>
+                <li class="fb-top">
+                    보험상품상담<br>
+                    <span>080-365-6363</span>
+                </li>
+                <li class="fb-middle">
+                    한화생명<br>
+                    앱 QR코드
+                    <img src="images/hanhwa_qrcode.png" alt="한화생명앱QR코드">
+                </li>
+                <li class="fb-bottom">
+                    <a href="#">위로가기</a>
+                </li>
+            </ul>
+        </div>
+        <!-- 헤더 -->
+        <header id="header">
+            <div class="inner">
+                <h1 class="logo">
+                    <a href="#" class="bt"></a>
+                </h1>
+                <ul class="link">
+                    <li><a class="bt" href="#">인증센터</a></li>
+                    <li><a class="bt" href="#">회사소개</a></li>
+                    <li><a class="bt" href="#">공시실</a></li>
+                    <li><a class="bt" href="#">ENGLISH</a></li>
+                </ul>
+                <nav class="gnb">
+                    <div class="toggle">
+                        <button class="bt clicked">개인</button>
+                        <button class="bt">기업</button>
+                    </div>
+                    <ul class="gnb-main">
+                        <li>
+                            <a href="#">마이페이지</a>
+                            <div class="gnb-sub">
+                                <div class="container">
+                                    <dl>
+                                        <dt><a href="#">보험</a></dt>
+                                        <dd><a href="#">보험계약조회/관리</a></dd>
+                                        <dd><a href="#">보험료납입</a></dd>
+                                        <dd><a href="#">보험료청구</a></dd>
+                                        <dd><a href="#">출금(중도/만기/해지 등)</a></dd>
+                                        <dd><a href="#">보험계약변경</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">퇴직연금</a></dt>
+                                        <dd><a href="#">퇴직연금계약조회/관리</a></dd>
+                                        <dd><a href="#">상품변경</a></dd>
+                                        <dd><a href="#">IRP관리</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">대출</a></dt>
+                                        <dd><a href="#">대출신청</a></dd>
+                                        <dd><a href="#">대출조회</a></dd>
+                                        <dd><a href="#">대출상환/이자납입</a></dd>
+                                        <dd><a href="#">대출관리</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">펀드</a></dt>
+                                        <dd><a href="#">편드조회</a></dd>
+                                        <dd><a href="#">펀드매매</a></dd>
+                                        <dd><a href="#">펀드관리</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">신탁</a></dt>
+                                        <dd><a href="#">신탁조회</a></dd>
+                                        <dd><a href="#">신탁해지</a></dd>
+                                        <dd><a href="#">신탁관리</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">나의 정보</a></dt>
+                                        <dd><a href="#">개인정보관리</a></dd>
+                                        <dd><a href="#">나의관심상품</a></dd>
+                                        <dd><a href="#">나의상담내역</a></dd>
+                                        <dd><a href="#">금융거래내역</a></dd>
+                                        <dd><a href="#">전자서명조회</a></dd>
+                                        <dd><a href="#">증명서발급</a></dd>
+                                        <dd><a href="#">개인정보 유출 신고</a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">상품</a>
+                            <div class="gnb-sub">
+                                <div class="container">
+                                    <dl>
+                                        <dt><a href="#">보험</a></dt>
+                                        <dd><a href="#">전체상품</a></dd>
+                                        <dd><a href="#">종신/정기보험</a></dd>
+                                        <dd><a href="#">건강/상해보험</a></dd>
+                                        <dd><a href="#">연금/저축보험</a></dd>
+                                        <dd><a href="#">어린이보험</a></dd>
+                                        <dd><a href="#">장애인보험</a></dd>
+                                        <dd><a href="#">다이렉트보험</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">퇴직연금</a></dt>
+                                        <dd><a href="#">퇴직연금안내</a></dd>
+                                        <dd><a href="#">퇴직연금서비스</a></dd>
+                                        <dd><a href="#">IRP가입</a></dd>
+                                        <dd><a href="#">투자가이드</a></dd>
+                                        <dd><a href="#">가입자교육</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">대출</a></dt>
+                                        <dd><a href="#">전체상품</a></dd>
+                                        <dd><a href="#">인터넷대출</a></dd>
+                                        <dd><a href="#">신용대출</a></dd>
+                                        <dd><a href="#">담보대출</a></dd>
+                                        <dd><a href="#">보험계약대출</a></dd>
+                                        <dd><a href="#">기타상품</a></dd>
+                                        <dd><a href="#">대출가이드</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">펀드</a></dt>
+                                        <dd><a href="#">전체펀드</a></dd>
+                                        <dd><a href="#">국내펀드</a></dd>
+                                        <dd><a href="#">해외펀드</a></dd>
+                                        <dd><a href="#">펀드가이드</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">신탁</a></dt>
+                                        <dd><a href="#">신탁상품</a></dd>
+                                        <dd><a href="#">신탁가이드</a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="#">고객센터</a>
+                            <div class="gnb-sub">
+                                <div class="container">
+                                    <dl>
+                                        <dt><a href="#">고객상담</a></dt>
+                                        <dd><a href="#">상담전화 안내</a></dd>
+                                        <dd><a href="#">인터넷상담신청</a></dd>
+                                        <dd><a href="#">방문상담신청</a></dd>
+                                        <dd><a href="#">자주하는 질문(FAQ)</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">고객지원</a></dt>
+                                        <dd><a href="#">필요서류 안내</a></dd>
+                                        <dd><a href="#">이용안내</a></dd>
+                                        <dd><a href="#">지점찾기</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">공지/이벤트</a></dt>
+                                        <dd><a href="#">공지사항</a></dd>
+                                        <dd><a href="#">이벤트</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">고객서비스</a></dt>
+                                        <dd><a href="#">한화생명종합 서비스</a></dd>
+                                        <dd><a href="#">VIP 서비스</a></dd>
+                                        <dd><a href="#">헬스케어 서비스</a></dd>
+                                        <dd><a href="#">암보호 서비스</a></dd>
+                                        <dd><a href="#">우행터 서비스</a></dd>
+                                        <dd><a href="#">상조 서비스</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">소비자포털</a></dt>
+                                        <dd><a href="#">소비자포털 소개</a></dd>
+                                        <dd><a href="#">칭찬/제안/민원</a></dd>
+                                        <dd><a href="#">소비자보호체계</a></dd>
+                                        <dd><a href="#">소비자보호우수사례</a></dd>
+                                        <dd><a href="#">금융사고예방 안내</a></dd>
+                                        <dd><a href="#">소비자금융교육</a></dd>
+                                    </dl>
+                                    <dl>
+                                        <dt><a href="#">신고센터</a></dt>
+                                        <dd><a href="#">보험범죄신고</a></dd>
+                                        <dd><a href="#">개인정보유출신고</a></dd>
+                                        <dd><a href="#">대출과장광고신고</a></dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </nav>
+                <div class="user">
+                    <button class="bt bt-login">로그인</button>
+                    <button class="bt bt-search">검색</button>
+                    <button class="bt bt-all-menu">전체메뉴</button>
+                </div>
+                <div class="searchbar">
+                    <form action="#" class="search-form">
+                        <h2>통합검색</h2>
+                        <input id="search" type="text" placeholder="무엇을 찾으시나요?">
+                        <input type="button" class="search-form-bt" value="검색">
+                        <a class="search-rc" href="#">#보험</a>
+                        <a class="search-rc" href="#">#계약조회</a>
+                        <a class="search-rc" href="#">#계약변경</a>
+                        <a class="search-rc" href="#">#중도인출</a>
+                        <a class="search-rc" href="#">#퇴직연금</a>
+                    </form>
+                </div>
+            </div>
+        </header>
+        <!-- 메인 -->
+        <main id="main">
+            <section class="visual">
+                <div class="inner">
+                    <div class="swiper-container sw-visual">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide visual1">
+                                <a href="#"><img src="images/main-banner-txt1.png" alt="한화생명앱에서한번에"></a>
+                            </div>
+                            <div class="swiper-slide visual2">
+                                <a href="#"><img src="images/main-banner-txt2.png" alt="빠짐없이100세보장"></a>
+                            </div>
+                            <div class="swiper-slide visual3">
+                                <a href="#"><img src="images/main-banner-txt3.png" alt="3월다이렉트보험가입이벤트"></a>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" class="bt-stop"></a>
+                    <div class="swiper-pagination"></div>
+                    <div class="login-box">
+                        <div class="t-box">한화생명 로그인</div>
+                        <div class="b-box clear">
+                            <p>인증센터</p>
+                            <span></span>
+                            <p>회원가입</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- quickmenu PC버전 -->
+            <section class="quickmenu">
+                <div class="inner">
+                    <div class="qmenu1">
+                        <a href="#">계약조회</a>
+                    </div>
+                    <div class="qmenu2">
+                        <a href="#">보험금청구</a>
+                    </div>
+                    <div class="qmenu3">
+                        <a href="#">보험금납입</a>
+                    </div>
+                    <div class="qmenu4">
+                        <a href="#">대출신청</a>
+                    </div>
+                    <div class="qmenu5">
+                        <a href="#">다이렉트</a>
+                    </div>
+                    <div class="qmenu6">
+                        <a href="#">신규 펀드가입</a>
+                    </div>
+                    <div class="qmenu7">
+                        <a href="#">신규 신탁가입</a>
+                    </div>
+                </div>
+            </section>
+            <!-- quickmenu Mobile버전 -->
+            <section class="m-quick">
+                <div class="swiper-container sw-quick">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide swq1">
+                            <a href="#">계약조회</a>
+                        </div>
+                        <div class="swiper-slide swq2">
+                            <a href="#">보험금청구</a>
+                        </div>
+                        <div class="swiper-slide swq3">
+                            <a href="#">보험금납입</a>
+                        </div>
+                        <div class="swiper-slide swq4">
+                            <a href="#">대출신청</a>
+                        </div>
+                        <div class="swiper-slide swq5">
+                            <a href="#">다이렉트</a>
+                        </div>
+                        <div class="swiper-slide swq6">
+                            <a href="#">신규 펀드가입</a>
+                        </div>
+                        <div class="swiper-slide swq7">
+                            <a href="#">신규 신탁가입</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="sw-quick-prev"></div>
+                <div class="sw-quick-next"></div>
+            </section>
+            <!-- direct-consult -->
+            <section class="direct-consult">
+                <div class="inner clear">
+                    <div class="direct left">
+                        <div class="txt">
+                            <h2>직접 가입으로 보험료 절약</h2>
+                            <strong>한화 다이렉트 보험!</strong>
+                            <p><a href="#">보험료 계산기 바로가기</a></p>
+                        </div>
+                        <div class="img"></div>
+                    </div>
+                    <div class="consult left">
+                        <div class="txt">
+                            <h2>적합한 상품을 간단히,</h2>
+                            <strong>맞춤형 상품상담!</strong>
+                            <p><a href="#">바로가기</a></p>
+                        </div>
+                        <div class="img"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- product -->
+            <section class="product">
+                <div class="inner">
+                    <div class="container">
+                        <button class="clicked" type="button" data-filter=".insurance">보험</button>
+                        <button type="button" data-filter=".direct">다이렉트</button>
+                        <button type="button" data-filter=".loan">대출</button>
+                        <button type="button" data-filter=".fu-tr">펀드/신탁</button>
+                    </div>
+                    <h2 class="title title1">생애 중심에 있는 3대 보험으로 든든하게!</h2>
+                    <div class="mix-wrapper">
+                        <div class="mix insurance" data-order="1">
+                            <span>#정기보험</span>
+                            <p>순수보장/만기환급 선택이 자유로운</p><strong>한화 e정기보험!</strong>
+                            <a href="#">바로가기</a>
+                        </div>
+                        <div class="mix insurance" data-order="2">
+                            <span>#암보험</span>
+                            <p>암 치료를 위한 새로운 특약보장</p><strong>시그니처 암보험!</strong>
+                            <a href="#">바로가기</a>
+                        </div>
+                        <div class="mix insurance" data-order="3">
+                            <span>#연금보험</span>
+                            <p>질병 보장에 노후 생활까지 보장하는</p><strong>평생든든한 연금보험!</strong>
+                            <a href="#">바로가기</a>
+                        </div>
+                        <div class="mix direct" data-order="4">
+                            <span>#저축보험</span>
+                            <p>현명한 재테크의 시작!</p><strong>e재테크 저축보험</strong>
+                            <a href="#">바로가기</a>
+                        </div>
+                        <div class="mix direct" data-order="5">
+                            <span>#실손보험</span>
+                            <p>부담되는 의료비 실속있게 대비</p><strong>e실손의료비 보장보험</strong>
+                            <a href="#">바로가기</a>
+                        </div>
+                        <div class="mix direct" data-order="6">
+                            <span>#정기보험</span>
+                            <p>순수보장/만기환급 선택이 자유로운</p><strong>한화 e정기보험!</strong>
+                            <a href="#">바로가기</a>
+                        </div>
+                        <div class="mix loan" data-order="7">
+                            <span>#신용대출</span>
+                            <p>무서류/무방문으로 간편하게!</p><strong>직장인 신용대출</strong>
+                            <a href="#">바로가기</a>
+                        </div>
+                        <div class="mix loan" data-order="8">
+                            <span>#약관대출</span>
+                            <p>생활자금이 필요할 때 편리하게,</p><strong>보험계약대출</strong>
+                            <a href="#">바로가기</a>
+                        </div>
+                        <div class="mix loan" data-order="9">
+                            <span>#신용대출</span>
+                            <p>전세입자를 위한 안심대출</p><strong>주택 전세자금대출</strong>
+                            <a href="#">바로가기</a>
+                        </div>
+                        <div class="mix fu-tr" data-order="10">
+                            <span>#신탁</span>
+                            <p>단기자산 운용으로 리스크를 최소화한</p><strong>Money Market Trust</strong>
+                            <a href="#">바로가기</a>
+                        </div>
+                        <div class="mix fu-tr" data-order="11">
+                            <span>#국내펀드</span>
+                            <p>주식형증권</p><strong>한국투자삼성TOP3신탁1호</strong>
+                            <a href="#">바로가기</a>
+                        </div>
+                        <div class="mix fu-tr" data-order="12">
+                            <span>#해외펀드</span>
+                            <p>주식형증권</p><strong>신한골드증권투자신탁1호</strong>
+                            <a href="#">바로가기</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- services -->
+            <section class="services">
+                <div class="inner">
+                    <h2>한화만의 특별한 서비스</h2>
+                    <div class="container">
+                        <div class="content health">
+                            <p>헬스케어 서비스</p>
+                            <h3>건강상담, 진료예약,<br>
+                                에스코트까지!</h3>
+                            <img src="images/service_health.png" alt="헬스케어">
+                        </div>
+                        <div class="content checkup">
+                            <p>암보호 서비스</p>
+                            <h3>맞춤형 검진 플랜으로<br>
+                                건강을 지켜드려요</h3>
+                            <img src="images/service_checkup.png" alt="맞춤검진">
+                        </div>
+                        <div class="content edu">
+                            <p>우행터 서비스</p>
+                            <h3>한화생명과 함께<br>
+                                행복한 일터를 만들어요</h3>
+                            <img src="images/service_edu.png" alt="우행터">
+                        </div>
+                        <div class="content funeral">
+                            <p>상조 서비스</p>
+                            <h3>장례행사시 편의를 위해<br>
+                                상조업체를 소개해드려요</h3>
+                            <img src="images/service_funeral.png" alt="상조">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- info -->
+            <section class="info">
+                <div class="inner clear">
+                    <div class="taxinfo">
+                        <h2>유익한 정보</h2>
+                        <p><a href="#">세무정보,<br>
+                                얼마나 알고 계시나요?</a></p>
+                        <button class="bt">더보기</button>
+                    </div>
+                    <div class="csguide">
+                        <h2>고객안내</h2>
+                        <ul>
+                            <li>
+                                <a href="#">고객상담</a>
+                            </li>
+                            <li>
+                                <a href="#">휴면보험금조회</a>
+                            </li>
+                            <li>
+                                <a href="#">앱이용안내</a>
+                            </li>
+                            <li>
+                                <a href="#">통합연금포털</a>
+                            </li>
+                            <li>
+                                <a href="#">금융서비스안내</a>
+                            </li>
+                            <li>
+                                <a href="#">소비자포털</a>
+                            </li>
+                        </ul>
+                        <button class="bt">더보기</button>
+                    </div>
+                    <div class="notice">
+                        <h2>공지사항</h2>
+                        <ul>
+                            <li>
+                                <a href="#">&middot; 퇴직연금 공모펀드 대규모 환매 예정 안내<span class="date">2023-01-13</span></a>
+                            </li>
+                            <li>
+                                <a href="#">&middot; 폐업으로 인한 미청구 퇴직연금 수령방법 안내<span class="date">2022-11-14</span></a>
+                            </li>
+                            <li>
+                                <a href="#">&middot; 온라인 창구 일시 중지 및 서비스 변경 내용 안내<span class="date">2021-03-22</span></a>         
+                            </li>
+                        </ul>
+                        <button class="bt">더보기</button>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- 푸터 -->
+        <footer id="footer">
+            <div class="inner">
+                <div class="footer-t">
+                    <span class="tel">대표전화 <strong>1588-6363</strong></span>
+                    <span class="cs-consult">고객불편상담 <strong>1800-6382</strong></span>
+                    <ul class="sns">
+                        <li class="youtube"><a href="#"></a></li>
+                        <li class="instagram"><a href="#"></a></li>
+                        <li class="facebook"><a href="#"></a></li>
+                    </ul>
+                    <div class="f-site">
+                        <a href="#void">패밀리 사이트<img src="images/arrow.png"></a>
+                        <div class="f-site-list">
+                            <ul>
+                                <li><a href="#">한화생명 다이렉트보험</a></li>
+                                <li><a href="#">한화생명금융서비스</a></li>
+                                <li><a href="#">한화라이프랩</a></li>
+                                <li><a href="#">전자구매시스템</a></li>
+                                <li><a class="dotted" href="#">한화그룹</a></li>
+                                <li><a href="#">패밀리사이트</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer-b">
+                    <span>정보안내</span>
+                    <p class="info-guide">
+                        개인정보 처리방침 &#124; 개인신용정보이용/제공현황조회 &#124; 이용약관 &#124; 신용정보활용체제 &#124; 고객권리안내 &#124; 휴면보험금조회 &#124;
+                        보호금융상품등록부
+                    </p><br>
+                    <span>신고안내</span>
+                    <p class="report-guide">
+                        전자민원접수 &#124; 개인정보피해접수 &#124; 보험범죄신고 &#124; 대출과장광고신고 &#124; 펀드판매불편신고 &#124; 서민금융 1332 &#124;
+                        장애인·장기기증자 보험가입 차별 신고센터
+                    </p><br>
+                    <span>서비스이용안내</span>
+                    <p class="service-guide">
+                        금융서비스이용안내 &#124; 한화생명앱이용안내 &#124; 디지털안내장 &#124; 전화상담(ARS)안내 &#124; 통합연금포털 &#124; 웹접근성안내
+                    </p>
+                    <address>서울시 영등포구 63로 50 (여의도동, 63 한화생명빌딩)<br>
+                        한화생명보험 주식회사 대표이사 여승주 | 사업자등록번호 116-81-11757</address>
+                    <p class="copyright">&copy;HANWHA LIFE Corp. All rights reserved.</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+
+</html>

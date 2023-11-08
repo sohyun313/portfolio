@@ -1,0 +1,404 @@
+@charset "utf-8";
+
+.main {
+    width: 100%;
+    position: relative;
+}
+
+.main .inner {
+    max-width: 1430px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+.main .inner .visual {
+    position: fixed;
+    top: 0; left: 0;
+    right: 0; bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: url(../images/visual.png)no-repeat center/cover;
+}
+
+.visual .menu {
+    position: absolute;
+    z-index: 1;
+    transition: background .5s;
+}
+
+.visual .clickme {
+    position: absolute;
+    top: 25vh; right: 6vw;
+    width: 10.5vw;
+    height: 6.5vw;
+    background: url(../images/clickme.png)no-repeat center;
+    background-size: contain;
+    animation: float 2s linear infinite;
+}
+
+@keyframes float {
+    0% {
+        transform: translateY(0%);
+    }
+
+    50% {
+        transform: translateY(15%);
+    }
+
+    100% {
+        transform: translateY(0%);
+    }
+}
+
+.portfolio {
+    width: 25vw;
+    height: 25vw;
+    background: url(../images/drop_portfolio.png)no-repeat center;
+    background-size: contain;
+    bottom: 20vw;
+    right: 20vw;
+}
+
+.about {
+    width: 17vw;
+    height: 17vw;
+    background: url(../images/drop_about.png)no-repeat center;
+    background-size: contain;
+    bottom: 16vh;
+    right: 36vw;
+}
+
+.contact {
+    width: 17.5vw;
+    height: 17.5vw;
+    background: url(../images/drop_contact.png)no-repeat center;
+    background-size: contain;
+    bottom: 21vh;
+    right: 12vw;
+}
+
+.menu a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.portfolio:hover {
+    background: url(../images/drop_portfolio_h.png)no-repeat center;
+    background-size: contain;
+}
+
+.about:hover {
+    background: url(../images/drop_about_h.png)no-repeat center;
+    background-size: contain;
+}
+
+.contact:hover {
+    background: url(../images/drop_contact_h.png)no-repeat center;
+    background-size: contain;
+}
+
+.visual .txt {
+    width: 463px;
+    height: 230px;
+    position: absolute;
+    top: 337px;
+    left: 275px;
+}
+
+.visual .txt .title {
+    display: block;
+    width: 26vw;
+    margin-bottom: 30px;
+}
+
+.visual .txt .desc {
+    display: block;
+    width: 26vw;
+    margin-bottom: 60px;
+}
+
+.visual .txt a {
+    color: #fff;
+    font-size: 1.2vw;
+    font-weight: 400;
+    border-radius: 30px;
+}
+.wrapper {
+    height: 100%;
+    margin: 0 auto;
+} 
+.btn {
+    position: absolute; 
+    left: 6vw; top: 14vw; 
+    width: 12.5vw;
+    height: 2.7vw;
+    line-height: 0.5vw;
+    color: #fff;
+    background-color: #0097e6;
+    box-shadow: 0px 3px 4px -4px rgba(0, 0, 0, 0.75);
+    transform: translate(-50%, -50%);
+    overflow: hidden; 
+    transition: all 1s;
+    z-index: 1;
+}
+.btn span {
+    display: block;
+    text-align: center;
+    padding: 1vw;
+}
+.btn:before {
+    content: "";
+    position: absolute;
+    width: 270px;
+    height: 270px;
+    border-radius: 35%;
+    background-color: #0097e6;
+    top: 100px; left: 50%;
+    transform: translate(-50%);
+    transition: all 1s;
+} 
+
+.btn:hover {
+    background-color: #003257;
+}
+
+.btn:hover::before {
+    animation: wave 5s infinite linear; 
+    top: 30px;
+} 
+
+span { position: relative; }
+
+.footer {
+    position: absolute;
+    bottom: 15px; left: 0;
+    width: 100vw;
+    z-index: 2;
+}
+.footer .inner {
+    max-width: 1430px;
+    width: 100%;
+    margin: 0 auto;
+}
+.footer p {
+    text-align: center;
+    font-size: 1em;
+    color: #1c2c74b2;
+}
+@keyframes wave {
+  0% { transform: translate(-50%) rotate(-180deg); }
+  100% { transform: translate(-50%) rotate(360deg); } 
+} 
+@media screen and (max-width:1550px){
+    .visual .txt {
+        top: 337px;
+        left: 15vw;
+    }
+    .portfolio {
+        width: 26vw;
+        height: 26vw;
+        bottom: 40vh;
+        right: 19vw;
+    }
+    
+    .about {
+        width: 17vw;
+        height: 17vw;
+        bottom: 15vh;
+        right: 34vw;
+    }
+    
+    .contact {
+        width: 18vw;
+        height: 18vw;
+        bottom: 22vh;
+        right: 8vw;
+    }
+    .visual .clickme {
+        top: 25vh; right: 6vw;
+        width: 10.5vw;
+        height: 6.5vw;
+    }
+}
+@media screen and (max-width:1280px){
+    .portfolio {
+        width: 27vw;
+        height: 27vw;
+        bottom: 43vh;
+        right: 18vw;
+    }
+    
+    .about {
+        width: 18vw;
+        height: 18vw;
+        bottom: 20vh;
+        right: 33vw;
+    }
+    
+    .contact {
+        width: 19vw;
+        height: 19vw;
+        bottom: 26vh;
+        right: 7vw;
+    }
+    .visual .clickme {
+        top: 27vh; right: 6vw;
+        width: 11vw;
+        height: 7vw;
+    }
+    .footer p {
+    font-size: 0.9em;
+    }
+}
+@media screen and (max-width:1024px){
+    .visual .txt .title {
+        width: 30vw;
+    }
+    .visual .txt .desc {
+        width: 30vw;
+    }
+    .btn {
+        left: 6.2vw; top: 16vw; 
+        width: 13.5vw;
+        height: 3vw;
+        line-height: 0.8vw;
+    }
+    .portfolio {
+        width: 28vw;
+        height: 28vw;
+        bottom: 48vh;
+        right: 16vw;
+    }
+    .about {
+        width: 19vw;
+        height: 19vw;
+        bottom: 31vh;
+        right: 31vw;
+    }
+    .contact {
+        width: 19vw;
+        height: 19vw;
+        bottom: 32vh;
+        right: 5vw;
+    }
+    .visual .clickme {
+        top: 32vh; right: 2.5vw;
+        width: 12vw;
+        height: 8vw;
+    }
+}
+@media screen and (max-width:768px){
+    .portfolio {
+        bottom: 48vh;
+        right: 16vw;
+    }
+    .about {
+        bottom: 32vh;
+        right: 30vw;
+    }
+    .contact {
+        bottom: 37vh;
+        right: 5vw;
+    }
+    .footer p {
+    font-size: 0.8em;
+    }
+}
+@media screen and (max-width:690px){
+    .visual .txt {
+        top: 25vh;
+        left: 18vw;
+    }
+    .visual .txt .title {
+        width: 330px;
+    }
+    .visual .txt .desc {
+        width: 320px;
+    }
+    .btn {
+        left: 50px; top: 22vh;
+        width: 110px;
+        height: 27px;
+        line-height: 1.8vw;
+    }
+    .btn span {
+        padding: 1em;
+    }
+    .portfolio {
+        width: 230px;
+        height: 230px;
+        bottom: 24vh;
+        right: 30%;
+    }
+    .about {
+        width: 150px;
+        height: 150px;
+        bottom: 14vh;
+        right: 55vw;
+    }
+    .contact {
+        width: 160px;
+        height: 160px;
+        bottom: 16vh;
+        right: 16vw;
+    }
+    .visual .clickme {
+        top: 53vh; right: 12vw;
+        width: 120px;
+        height: 60px;
+    }
+    .visual .txt a {
+        font-size: 0.5em;
+    }
+}
+@media screen and (max-width:480px){
+    .visual .txt {
+        top: 25vh;
+        left: 16vw;
+    }
+    .visual .txt .title {
+        width: 65vw;
+    }
+    .visual .txt .desc {
+        width: 64vw;
+    }
+    .btn {
+        left: 47px; top: 38vw;
+        width: 100px;
+        height: 25px;
+        line-height: 1.8vw;
+    }
+    .btn span {
+        padding: 1em;
+    }
+    .portfolio {
+        width: 42vw;
+        height: 42vw;
+        bottom: 250px;
+        right: 30%;
+    }
+    .about {
+        width: 32vw;
+        height: 32vw;
+        bottom: 150px;
+        right: 55vw;
+    }
+    .contact {
+        width: 32vw;
+        height: 32vw;
+        bottom: 140px;
+        right: 16vw;
+    }
+    .visual .clickme {
+        top: 53vh; right: 10vw;
+        width: 20vw;
+        height: 13vw;
+    }
+    .visual .txt a {
+        font-size: 0.5em;
+    }
+    .footer p {
+    font-size: 0.7em;
+    }
+}
